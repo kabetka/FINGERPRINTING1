@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+    <meta charset="UTF-8">
+    <title>Digitálna stopa študenta</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>👣 Digitálna stopa – sebahodnotenie</h1>
+    <p>Odpovedz úprimne. Výsledok je len pre teba 🙂</p>
+
+    <form id="quiz">
+
+        <div class="question">
+            <p>1. Máš verejný profil na sociálnych sieťach?</p>
+            <label><input type="radio" name="q1" value="2"> Áno</label>
+            <label><input type="radio" name="q1" value="1"> Čiastočne</label>
+            <label><input type="radio" name="q1" value="0"> Nie</label>
+        </div>
+
+        <div class="question">
+            <p>2. Zdieľaš fotky s polohou alebo zo súkromia?</p>
+            <label><input type="radio" name="q2" value="2"> Často</label>
+            <label><input type="radio" name="q2" value="1"> Občas</label>
+            <label><input type="radio" name="q2" value="0"> Nikdy</label>
+        </div>
+
+        <div class="question">
+            <p>3. Používaš rovnaké heslo na viacerých službách?</p>
+            <label><input type="radio" name="q3" value="2"> Áno</label>
+            <label><input type="radio" name="q3" value="1"> Na niektorých</label>
+            <label><input type="radio" name="q3" value="0"> Nie</label>
+        </div>
+
+        <div class="question">
+            <p>4. Vieš, čo o tebe nájde Google?</p>
+            <label><input type="radio" name="q4" value="2"> Nikdy som to nekontroloval/a</label>
+            <label><input type="radio" name="q4" value="1"> Raz dávno</label>
+            <label><input type="radio" name="q4" value="0"> Pravidelne</label>
+        </div>
+
+        <button type="button" onclick="vyhodnot()">Vyhodnotiť</button>
+    </form>
+
+    <div id="result"></div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
